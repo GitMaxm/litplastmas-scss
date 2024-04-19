@@ -1,0 +1,46 @@
+.info {
+    position: relative;
+    font-size: 18px;
+    color: var(--text-color);
+
+    &--map,
+    &--tel,
+    &--mail {
+        padding-left: 35px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            width: 21px;
+            height: 21px;
+            transform: translate(0%, -50%);
+
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &--map::before {
+        background-image: url("./../images/header/map.svg");
+    }
+
+    &--tel::before {
+        background-image: url("./../images/header/phone.svg");
+    }
+    &--mail::before {
+        background-image: url("./../images/header/mail.png");
+    }
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        &--map,
+        &--tel,
+        &--mail {
+            padding-left: 26px;
+        }
+    }
+}

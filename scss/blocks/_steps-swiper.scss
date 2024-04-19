@@ -1,0 +1,103 @@
+@media (max-width: 1100px) {
+    .steps__list--none {
+        display: none;
+    }
+
+    .steps__swiper--mobile {
+        display: flex !important;
+    }
+}
+
+.steps__swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    position: relative;
+
+    background-image: url("./../images/bg-steps.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steps__swiper-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.steps__swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+
+    padding: 62px 20px 34px 32px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.steps__swiper-slide__number {
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    margin-top: 6px;
+}
+.steps__swiper-slide__number::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.473);
+
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    top: -4px;
+    left: -12px;
+    z-index: -1;
+}
+.steps__swiper-text {
+    font-weight: 500;
+    font-size: 18px;
+}
+.steps__swiper-navigation {
+    margin: 0 auto;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.steps__swiper-pagination {
+    width: auto !important;
+
+    span {
+        width: 10px;
+        height: 10px;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px) !important;
+    }
+}
+
+.steps__swiper-button-prev,
+.steps__swiper-button-next {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Добавлено для лучшей визуальной отзывчивости */
+}
+
+.steps__swiper-button-prev.disabled,
+.steps__swiper-button-next.disabled,
+.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
+
+.steps__swiper-button-prev circle:hover,
+.steps__swiper-button-next circle:hover {
+    transition: fill 0.2s, color 0.2s;
+    fill: #fbce51;
+}

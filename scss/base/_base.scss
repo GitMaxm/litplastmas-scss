@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: var(--font-main);
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-size: 16px;
+}
+
+a {
+	color: var(--text-color);
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: var(--accent);
+	}
+}
+img {
+	display: block;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.logo {
+	font-size: 32px;
+	color: #84b0e3;
+	font-family: var(--font-accent);
+}
+
+.title-2 {
+	font-size: 36px;
+	font-family: var(--font-accent);
+	color: var(--accent);
+	font-weight: 700;
+
+	@include mediaTablet {
+		font-size: 28px;
+	}
+}
+
+.title-3 {
+	font-size: 26px;
+	font-family: var(--font-accent);
+	color: var(--accent);
+	font-weight: 500;
+
+	@include mediaTablet {
+		font-size: 20px;
+	}
+}
+
+.title-4 {
+	font-size: 20px;
+	color: #c1baa2;
+	font-weight: 700;
+
+	@include mediaTablet {
+		font-size: 18px;
+	}
+}

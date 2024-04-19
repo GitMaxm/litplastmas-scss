@@ -1,0 +1,24 @@
+.services {
+    padding: 50px 0;
+    position: relative;
+}
+
+.services__title {
+    margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
+}
+
+.services__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @include mediaMobile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

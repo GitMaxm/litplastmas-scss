@@ -1,0 +1,19 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+
+/* Blocks */
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/info";
+@import "./blocks/nav-icon";
+@import "./blocks/services";
+@import "./blocks/card";
+@import "./blocks/about";
+@import "./blocks/steps";
+@import "./blocks/steps-swiper";
+@import "./blocks/footer";
